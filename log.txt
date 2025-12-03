@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\cTrader_email\ctrader.py", line 22, in <module>
+    S3_BUCKET   = os.environ["S3_BUCKET"]          # mail\u2011uid\u2011store2
+                  ~~~~~~~~~~^^^^^^^^^^^^^
+  File "<frozen os>", line 716, in __getitem__
+KeyError: 'S3_BUCKET'
+Traceback (most recent call last):
+  File "C:\cTrader_email\ctrader.py", line 22, in <module>
+    S3_BUCKET   = os.environ["S3_BUCKET"]          # mail\u2011uid\u2011store2
+                  ~~~~~~~~~~^^^^^^^^^^^^^
+  File "<frozen os>", line 716, in __getitem__
+KeyError: 'S3_BUCKET'
+Traceback (most recent call last):
+  File "C:\cTrader_email\ctrader.py", line 22, in <module>
+    S3_BUCKET   = os.environ["S3_BUCKET"]          # mail\u2011uid\u2011store2
+                  ~~~~~~~~~~^^^^^^^^^^^^^
+  File "<frozen os>", line 716, in __getitem__
+KeyError: 'S3_BUCKET'
+^C^C^C^C
