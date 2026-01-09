@@ -78,9 +78,9 @@
 ## Таблица `symbols.csv`
 CSV‑файл управляет тем, как считается объём для каждого инструмента:
 ```
-symbol,formula,volume_limit,contract_size
-XAUUSD,lots,40,100
-XAGUSD,money,20,100
+symbol,formula,volume_limit,contract_size,type
+XAUUSD,lots,40,100,forex
+XAGUSD,money,20,100,forex
 ```
 - `symbol` — название инструмента из письма (регистр не важен).
 - `formula` — `lots` или `money`:
@@ -88,6 +88,7 @@ XAGUSD,money,20,100
   - `money`: объём = `Volume in USD` / 1 000 000, итоговая единица — `m` (миллионы), например `1.16 m`.
 - `volume_limit` — порог, с которым сравнивается рассчитанный объём.
 - `contract_size` — нужен только для формулы `lots`.
+- `type` — группировка символов.
 
 Если файл изменить, `ctrader.py` заметит новое время модификации и перезапустится, поэтому правки применяются без ручной
 остановки процесса.
